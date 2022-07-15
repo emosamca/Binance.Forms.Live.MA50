@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binance.Forms", "Binance.Forms\Binance.Forms.csproj", "{56705776-36B4-4E81-9F6F-0DAF94D801BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binance.Commons", "Binance.Commons\Binance.Commons.csproj", "{B1FB5F96-F778-4147-ADED-BB2DAD2D2F5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binance.Connections", "Binance.Connections\Binance.Connections.csproj", "{2BC6D16F-3EC0-4D36-BE6F-6EEA97F6ACED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telegram.Client", "Telegram.Client\Telegram.Client.csproj", "{9A00F709-7BF1-405E-B40E-5D662CD38C09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binance.Indicator", "Binance.Indicator\Binance.Indicator.csproj", "{A471FED0-5F11-4DF7-932D-A21C18388154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binance.Mysql", "Binance.Mysql\Binance.Mysql.csproj", "{875774BB-7EE3-434D-8509-45889A3120AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binance.Socket.Connections", "Binance.Socket.Connections\Binance.Socket.Connections.csproj", "{D1EED45C-B742-4640-8CCF-6A2B4629DACF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56705776-36B4-4E81-9F6F-0DAF94D801BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56705776-36B4-4E81-9F6F-0DAF94D801BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56705776-36B4-4E81-9F6F-0DAF94D801BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56705776-36B4-4E81-9F6F-0DAF94D801BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FB5F96-F778-4147-ADED-BB2DAD2D2F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FB5F96-F778-4147-ADED-BB2DAD2D2F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FB5F96-F778-4147-ADED-BB2DAD2D2F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FB5F96-F778-4147-ADED-BB2DAD2D2F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC6D16F-3EC0-4D36-BE6F-6EEA97F6ACED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC6D16F-3EC0-4D36-BE6F-6EEA97F6ACED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC6D16F-3EC0-4D36-BE6F-6EEA97F6ACED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC6D16F-3EC0-4D36-BE6F-6EEA97F6ACED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A00F709-7BF1-405E-B40E-5D662CD38C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A00F709-7BF1-405E-B40E-5D662CD38C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A00F709-7BF1-405E-B40E-5D662CD38C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A00F709-7BF1-405E-B40E-5D662CD38C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A471FED0-5F11-4DF7-932D-A21C18388154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A471FED0-5F11-4DF7-932D-A21C18388154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A471FED0-5F11-4DF7-932D-A21C18388154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A471FED0-5F11-4DF7-932D-A21C18388154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875774BB-7EE3-434D-8509-45889A3120AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875774BB-7EE3-434D-8509-45889A3120AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875774BB-7EE3-434D-8509-45889A3120AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875774BB-7EE3-434D-8509-45889A3120AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1EED45C-B742-4640-8CCF-6A2B4629DACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EED45C-B742-4640-8CCF-6A2B4629DACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EED45C-B742-4640-8CCF-6A2B4629DACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EED45C-B742-4640-8CCF-6A2B4629DACF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAC21DE8-33A2-4331-A37C-A5CAD2B2C8C6}
+	EndGlobalSection
+EndGlobal
