@@ -73,16 +73,22 @@ namespace Binance.Socket.Connections
                     // 30 dakika
                     Thread.Sleep(360 * 60 * 1000);
                     Debug.WriteLine("Listenkey sıfırlanacak.");
-                    
-                    var task = Task.Run(async () => await _httpClient.PostAsync("api/v3/userDataStream", null));
+
+                    var task = Task.Run(async () => await _httpClient.DeleteAsync($"api/v3/userDataStream?listenKey={ListenKey}"));
                     dynamic result = task.Result;
+
+                    Thread.Sleep(5000);
+                    CreateClient();
+
+                    task = Task.Run(async () => await _httpClient.PostAsync("api/v3/userDataStream", null));
+                    result = task.Result;
                     var mesaj = task.Result.Content.ReadAsStringAsync();
                     var sonuc = JsonConvert.DeserializeObject<UserDataStreamResponse>(mesaj.Result.ToString());
                     ListenKey = sonuc.ListenKey;
                     mywebsocketaddr = websocketaddr + ListenKey;
                     ws = new WebSocket(mywebsocketaddr);
 
-                    //ws.OnMessage += Ws_OnMessage; ;
+                    ws.OnMessage += Ws_OnMessage; ;
                     ws.Connect(); Debug.WriteLine("Listenkey başarıyla sıfırlandı.");
                 }
                 catch (Exception ex)

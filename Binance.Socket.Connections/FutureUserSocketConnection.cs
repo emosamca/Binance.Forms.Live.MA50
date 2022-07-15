@@ -84,7 +84,7 @@ namespace Binance.Socket.Connections
                     mywebsocketaddr = websocketaddr + ListenKey;
                     ws = new WebSocket(mywebsocketaddr);
 
-                    //ws.OnMessage += Ws_OnMessage; ;
+                    ws.OnMessage += Ws_OnMessage; ;
                     ws.Connect(); Debug.WriteLine("FListenkey başarıyla sıfırlandı.");
                 }
                 catch (Exception ex)
